@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply antialiased;
+  }
+  body {
+    @apply font-sans bg-beauty-light text-gray-900 overflow-x-hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans tracking-tight leading-tight;
+    font-weight: 600;
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.transition-smooth {
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-primary {
+  @apply px-8 py-3 bg-beauty-gold text-white rounded-full font-medium shadow-lg;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-primary:hover {
+  @apply bg-opacity-90 -translate-y-0.5 shadow-xl;
+  background-color: #c5a02e; /* Slightly darker gold on hover */
+}
+
+.btn-primary:active {
+  @apply scale-95;
+}
+
+.btn-secondary {
+  @apply px-8 py-3 border-2 border-beauty-gold text-beauty-gold rounded-full font-medium bg-transparent;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-secondary:hover {
+  @apply bg-beauty-gold text-white -translate-y-0.5 shadow-lg;
+}
+
+.btn-secondary:active {
+  @apply scale-95;
+}

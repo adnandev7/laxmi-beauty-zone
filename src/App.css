@@ -1,0 +1,44 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: var(--neutral-soft-cream);
+  padding: 60px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: var(--text-soft-gray);
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Global Section Utility */
+section {
+  width: 100%;
+}
+
+/* Animations for reveal (optional if using a library, but keeping it simple with CSS) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
