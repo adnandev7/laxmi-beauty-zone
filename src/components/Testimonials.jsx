@@ -1,5 +1,6 @@
 import React from 'react';
-import './Testimonials.css';
+import { motion } from 'framer-motion';
+import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
@@ -19,66 +20,88 @@ const testimonials = [
     service: "Makeup",
     rating: 5,
     text: "I liked the makeup very much, everything was very good, the make-up products were also very good, I would highly recommend you to go there"
-  },
-  {
-    name: "Kashish Budhwani",
-    service: "General Services",
-    rating: 5,
-    text: "Superb experience, nice products used and best timely services. Recommend to visit."
-  },
-  {
-    name: "Pratiksha Naik",
-    service: "Highlighting",
-    rating: 5,
-    text: "Really love her work..nd also she is very kind ...my first experience in highlighting my hairs is so worthy... thankyou so much Lakshmi ❤️❤️"
-  },
-  {
-    name: "Renuka Raut",
-    service: "Bridal Services",
-    rating: 5,
-    text: "She is simply good at her work....she made my wedding day more special... Thank you dear Laxmi..♥️"
   }
 ];
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="testimonials">
-      <div className="container">
-        <h2 className="section-title">Loved by Our Clients</h2>
-        <p className="section-subtitle">Real reviews from real people</p>
-        
-        <div className="testimonials-grid">
+    <section id="testimonials" className="section-padding bg-beauty-light relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 left-0 w-64 h-64 bg-beauty-gold/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-64 h-64 bg-beauty-accent/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-5xl font-sans font-bold mb-4">
+            Loved by Our <span className="text-beauty-gold">Clients</span>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-gray-500 font-sans">
+            Real reviews from our beautiful community.
+          </motion.p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="testimonial-card">
-              <div className="star-rating">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full relative group hover:shadow-xl transition-all duration-500"
+            >
+              <div className="absolute top-6 right-8 text-beauty-gold/10 group-hover:text-beauty-gold/20 transition-colors">
+                <Quote size={40} />
+              </div>
+
+              <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="star">★</span>
+                  <Star key={i} size={16} className="fill-beauty-gold text-beauty-gold mr-1" />
                 ))}
               </div>
-              <p className="testimonial-text">"{testimonial.text}"</p>
-              <div className="testimonial-footer">
-                <span className="client-name">{testimonial.name}</span>
-                <span className="service-tag">{testimonial.service}</span>
+
+              <p className="text-gray-600 italic mb-8 flex-grow leading-relaxed font-sans">
+                "{testimonial.text}"
+              </p>
+
+              <div className="mt-auto pt-6 border-t border-gray-50">
+                <h4 className="font-bold text-beauty-accent font-sans">{testimonial.name}</h4>
+                <p className="text-sm text-beauty-gold font-medium mt-1">{testimonial.service}</p>
               </div>
-              <div className="quote-icon">"</div>
-            </div>
+            </motion.div>
           ))}
         </div>
-        
-        <div className="trust-indicators">
-          <div className="trust-badge">
-            <span className="badge-value">4.9/5</span>
-            <span className="badge-label">Average Rating</span>
+
+        {/* Trust Indicators */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mt-20 flex flex-wrap justify-center gap-8 md:gap-16 pt-10 border-t border-beauty-gold/10"
+        >
+          <div className="text-center">
+            <div className="text-2xl font-bold text-beauty-accent">4.9/5</div>
+            <div className="text-xs uppercase tracking-widest text-gray-400 font-semibold mt-1">Average Rating</div>
           </div>
-          <div className="trust-badge">
-            <span className="badge-value">50+</span>
-            <span className="badge-label">Happy Clients</span>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-beauty-accent">100+</div>
+            <div className="text-xs uppercase tracking-widest text-gray-400 font-semibold mt-1">Happy Clients</div>
           </div>
-          <div className="trust-badge">
-            <span className="badge-value">Verified</span>
-            <span className="badge-label">Google Reviews</span>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-beauty-accent">Verified</div>
+            <div className="text-xs uppercase tracking-widest text-gray-400 font-semibold mt-1">Google Reviews</div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

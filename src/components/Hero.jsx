@@ -23,7 +23,7 @@ const Hero = () => {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           >
             <h1 className="text-5xl md:text-7xl font-sans font-bold text-white leading-tight mb-6 drop-shadow-xl tracking-tight">
-              Laxmi <span className="text-beauty-gold font-light">Beauty</span> Salon
+              Xyz <span className="text-beauty-gold font-light">Beauty</span> Salon
             </h1>
             <p className="text-base md:text-lg text-gray-200 mb-10 max-w-xl mx-auto leading-relaxed font-light drop-shadow-md">
               Professional grooming services in Nagpur. Precision and care for your unique beauty.

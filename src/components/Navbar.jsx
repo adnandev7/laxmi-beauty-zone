@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col border-l border-gray-200 pl-4">
               <h1 className="text-2xl tracking-tighter leading-none flex items-center gap-2">
-                <span className="font-brand font-bold text-[#1a1a1a]">LAXMI</span>
+                <span className="font-brand font-bold text-[#1a1a1a]">XYZ</span>
                 <span className="text-beauty-gold font-sans font-light uppercase tracking-tight">Beauty Salon</span>
               </h1>
               <span className="text-[9px] font-sans font-semibold text-gray-500 tracking-[0.5em] uppercase mt-2 leading-none">
