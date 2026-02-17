@@ -7,19 +7,19 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6 text-beauty-gold" />,
       label: "Call Us",
-      value: "08698162577",
-      link: "tel:08698162577"
+      value: "1234567890",
+      link: "tel:1234567890"
     },
     {
       icon: <MessageSquare className="w-6 h-6 text-beauty-gold" />,
       label: "WhatsApp",
-      value: "08698162577",
-      link: "https://wa.me/918698162577?text=Hello,%20I%20found%20Laxmi%20Beauty%20Zone%20online%20and%20would%20like%20to%20book%20a%20service."
+      value: "1234567890",
+      link: "https://wa.me/911234567890?text=Hello,%20I%20found%20demo%20beauty%20zone%20online%20and%20would%20like%20to%20book%20a%20service."
     },
     {
       icon: <MapPin className="w-6 h-6 text-beauty-gold" />,
       label: "Our Location",
-      value: "Laxmi Beauty Zone, Beside Trimurti Nagar Garden, Nagpur",
+      value: "demo beauty zone, Beside Trimurti Nagar Garden, Nagpur",
       link: "https://www.google.com/maps/place/Laxmi+Beauty+Zone/@21.1219,79.0494,15z"
     }
   ];
@@ -79,7 +79,7 @@ const Contact = () => {
                 allowFullScreen={true} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Laxmi Beauty Zone Location"
+                title="demo beauty zone Location"
               ></iframe>
               <a 
                 href="https://www.google.com/maps/place/Laxmi+Beauty+Zone/@21.1854481,79.0766077,15z"

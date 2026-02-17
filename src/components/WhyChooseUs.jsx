@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Why Choose <span className="text-beauty-gold">Laxmi Beauty Salon</span>?
+            Why Choose <span className="text-beauty-gold">Demo Beauty Salon</span>?
           </motion.h2>
           <div className="h-1 w-20 bg-beauty-gold mx-auto rounded-full" />
         </div>

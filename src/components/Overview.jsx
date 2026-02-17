@@ -53,7 +53,7 @@ const Overview = () => {
               <span className="text-beauty-gold">Pure Beauty</span>
             </motion.h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              At Laxmi Beauty Zone, we focus on quality, hygiene, and customer satisfaction. Our mission is to provide you with a relaxing environment where you can rejuvenate and reveal your best self.
+              At demo beauty zone, we focus on quality, hygiene, and customer satisfaction. Our mission is to provide you with a relaxing environment where you can rejuvenate and reveal your best self.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8">

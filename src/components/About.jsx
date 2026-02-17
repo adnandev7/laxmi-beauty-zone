@@ -71,7 +71,7 @@ const About = () => {
         </div>
         
         <div className="about-content">
-          <h2 className="section-title text-left">Why Laxmi Beauty Zone?</h2>
+          <h2 className="section-title text-left">Why demo beauty zone?</h2>
           <p className="about-intro">
             More than just a salon – we're your personal beauty sanctuary in the heart of Nagpur.
           </p>

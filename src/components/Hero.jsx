@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1600"
-          alt="Laxmi Beauty Salon Background"
+          alt="demo beauty zone Background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
@@ -23,7 +23,7 @@ const Hero = () => {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           >
             <h1 className="text-5xl md:text-7xl font-sans font-bold text-white leading-tight mb-6 drop-shadow-xl tracking-tight">
-              Xyz <span className="text-beauty-gold font-light">Beauty</span> Salon
+              demo <span className="text-beauty-gold font-light">beauty</span> zone
             </h1>
             <p className="text-base md:text-lg text-gray-200 mb-10 max-w-xl mx-auto leading-relaxed font-light drop-shadow-md">
               Professional grooming services in Nagpur. Precision and care for your unique beauty.
@@ -31,7 +31,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:08698162577"
+                href="tel:1234567890"
                 className="btn-primary flex items-center justify-center gap-2 group px-8 py-3 text-base"
               >
                 <Phone size={20} fill="white" />
@@ -39,7 +39,7 @@ const Hero = () => {
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </a>
               <a 
-                href="https://wa.me/918698162577?text=Hello,%20I%20found%20Laxmi%20Beauty%20Zone%20online%20and%20would%20like%20to%20book%20a%20service."
+                href="https://wa.me/911234567890?text=Hello,%20I%20found%20demo%20beauty%20zone%20online%20and%20would%20like%20to%20book%20a%20service."
                 target="_blank"
                 className="px-8 py-3 rounded-full border border-white/50 text-white font-medium hover:bg-white hover:text-gray-900 transition-smooth active:scale-95 flex items-center justify-center gap-2 text-base backdrop-blur-md hover:-translate-y-0.5"
               >

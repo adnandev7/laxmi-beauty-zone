@@ -4,22 +4,22 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Juhi Meshram",
+    name: "User 1",
     service: "Hair Spa",
     rating: 5,
-    text: "The hair spa service was excellent. They gave proper time without any rush, and the head massage was very relaxing. All this at a very reasonable price. 💯 Thank u😊"
+    text: "Testimonial 1"
   },
   {
-    name: "Zeal Khan",
+    name: "User 2",
     service: "Clean-up & Threading",
     rating: 5,
-    text: "I liked the services done by Damini di❤️ clean-up threading smoothly done by her.. highly recommended"
+    text: "Testimonial 2"
   },
   {
-    name: "Shivani Singh",
+    name: "User 3",
     service: "Makeup",
     rating: 5,
-    text: "I liked the makeup very much, everything was very good, the make-up products were also very good, I would highly recommend you to go there"
+    text: "Testimonial 3"
   }
 ];
 

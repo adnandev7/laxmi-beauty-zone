@@ -27,8 +27,8 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col border-l border-gray-200 pl-4">
               <h1 className="text-2xl tracking-tighter leading-none flex items-center gap-2">
-                <span className="font-brand font-bold text-[#1a1a1a]">XYZ</span>
-                <span className="text-beauty-gold font-sans font-light uppercase tracking-tight">Beauty Salon</span>
+                <span className="font-brand font-bold text-[#1a1a1a]">DEMO</span>
+                <span className="text-beauty-gold font-sans font-light uppercase tracking-tight">Beauty Zone</span>
               </h1>
               <span className="text-[9px] font-sans font-semibold text-gray-500 tracking-[0.5em] uppercase mt-2 leading-none">
                 Expert Care Zone
@@ -50,7 +50,7 @@ const Navbar = () => {
               ))}
             </div>
             <a 
-              href="tel:08698162577"
+              href="tel:1234567890"
               className="bg-beauty-gold text-white px-8 py-3 rounded-full text-sm font-bold shadow-xl hover:shadow-2xl transition-smooth active:scale-95 flex items-center gap-2 hover:-translate-y-0.5"
             >
               <Phone size={16} fill="white" />
@@ -92,14 +92,14 @@ const Navbar = () => {
               ))}
               <div className="pt-4 flex flex-col space-y-3 px-3">
                 <a 
-                  href="tel:08698162577"
+                  href="tel:1234567890"
                   className="flex items-center justify-center space-x-2 bg-beauty-gold text-white py-3 rounded-full font-medium"
                 >
                   <Phone size={18} />
                   <span>Call Now</span>
                 </a>
                 <a 
-                  href="https://wa.me/918698162577?text=Hello,%20I%20found%20Laxmi%20Beauty%20Zone%20online%20and%20would%20like%20to%20book%20a%20service."
+                  href="https://wa.me/911234567890?text=Hello,%20I%20found%20demo%20beauty%20zone%20online%20and%20would%20like%20to%20book%20a%20service."
                   target="_blank"
                   className="flex items-center justify-center space-x-2 bg-green-500 text-white py-3 rounded-full font-medium"
                 >

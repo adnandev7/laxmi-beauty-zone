@@ -33,8 +33,8 @@ function App() {
             </div>
             <div className="flex flex-col items-start border-l-2 border-beauty-gold/20 pl-4 text-left">
               <span className="text-2xl tracking-tight leading-none">
-                <span className="font-brand font-bold text-[#1a1a1a]">LAXMI</span>
-                <span className="text-beauty-gold font-sans font-light uppercase tracking-tight ml-2">Beauty Salon</span>
+                <span className="font-brand font-bold text-[#1a1a1a]">DEMO</span>
+                <span className="text-beauty-gold font-sans font-light uppercase tracking-tight ml-2">Beauty Zone</span>
               </span>
               <span className="text-[9px] font-sans font-semibold text-gray-500 tracking-[0.5em] uppercase mt-2">
                 Expert Care Zone
@@ -43,7 +43,7 @@ function App() {
           </div>
           <div className="h-px w-24 bg-beauty-gold/20 mx-auto mb-4" />
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} Laxmi Beauty Salon. Professionally managed in Nagpur.
+            &copy; {new Date().getFullYear()} demo beauty zone. Professionally managed in Nagpur.
           </p>
         </div>
       </footer>
